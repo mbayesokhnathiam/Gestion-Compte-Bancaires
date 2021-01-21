@@ -18,14 +18,12 @@ public abstract class Operation implements Serializable {
     private Compte compte;
     public Operation() {}
     public Operation(Long numero, Date dateOp, double montant, Compte compte) {
-        super();
         this.numero = numero;
         this.dateOp = dateOp;
         this.montant = montant;
         this.compte = compte;
     }
     public Operation(Date dateOp, double montant, Compte compte) {
-        super();
         this.dateOp = dateOp;
         this.montant = montant;
         this.compte = compte;

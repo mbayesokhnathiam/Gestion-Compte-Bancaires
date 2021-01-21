@@ -1,10 +1,15 @@
 package com.gainde.banque.models;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 import java.util.Date;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
 @DiscriminatorValue("CC")
+@Data
+@AllArgsConstructor
 public class CompteCourant extends Compte {
     private double decouvert;
     public CompteCourant() {
